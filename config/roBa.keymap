@@ -88,7 +88,7 @@
         NUM {
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR            &kp PERCENT                                             &kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NON_US_BACKSLASH
-&kp CARET        &kp AMPERSAND     &kp TILDE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN         &kp MINUS  &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOUBLE_QUOTES
+&kp CARET        &kp AMPERSAND     &kp GRAVE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN         &kp MINUS  &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOUBLE_QUOTES
 &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN      &kp PLUS   &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
 &trans           &trans            &trans             &kp SPACE             &trans                 &trans                &trans     &trans                                                  &kp EQUAL
             >;
