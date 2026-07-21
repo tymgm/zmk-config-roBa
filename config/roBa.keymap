@@ -65,6 +65,13 @@
             compatible = "zmk,behavior-pmw3610-config";
             #binding-cells = <1>;
         };
+
+        td_kana: td_kana {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt_to_layer_0 6 LANGUAGE_1>, <&kp SPACE>;
+        };
     };
 
     keymap {
@@ -72,10 +79,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp L         &kp U         &kp COMMA                    &kp DOT                                                      &kp F        &kp W  &lt 5 R  &kp Y  &kp P
-&kp E           &kp I         &kp A         &kp O                        &kp SQT      &kp PSCRN                        &kp MINUS      &kp K        &kp T  &kp N    &kp S  &kp H
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                        &kp V        &kp SLASH                        &kp SEMICOLON  &kp G        &kp D  &kp M    &kp J  &kp B
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LANGUAGE_1  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &kp BACKSPACE  &lt 1 ENTER                         &kp DEL
+&kp Q           &kp L         &kp U         &kp COMMA  &kp DOT                                                      &kp F        &kp W  &lt 5 R  &kp Y  &kp P
+&kp E           &kp I         &kp A         &kp O      &kp SQT      &kp PSCRN                        &kp MINUS      &kp K        &kp T  &kp N    &kp S  &kp H
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C      &kp V        &kp SLASH                        &kp SEMICOLON  &kp G        &kp D  &kp M    &kp J  &kp B
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &td_kana   &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &kp BACKSPACE  &lt 1 ENTER                         &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -84,7 +91,7 @@
         FUNCTION {
             bindings = <
 &kp LC(Q)  &kp LC(L)  &kp LC(U)  &kp LC(COMMA)  &kp LC(DOT)                              &kp F1   &kp F2  &kp F3           &kp F4         &kp F5
-&kp LC(E)  &kp LC(I)  &kp LC(A)  &kp LC(O)      &kp LC(SQT)  &trans             &kp F11  &kp F6   &kp F7  &kp F8           &kp F9         &kp F10
+&kp LC(E)  &kp LC(I)  &kp LC(A)  &kp LC(O)      &kp LC(SQT)  &mo 6              &kp F11  &kp F6   &kp F7  &kp F8           &kp F9         &kp F10
 &trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)      &kp LC(V)    &kp LC(SLASH)      &kp F12  &kp F13  &trans  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &trans
 &trans     &trans     &trans     &trans         &trans       &trans             &trans   &trans                                           &trans
             >;
