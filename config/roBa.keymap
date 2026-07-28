@@ -86,6 +86,13 @@
             tapping-term-ms = <200>;
             bindings = <&kp BACKSPACE>, <&mo 3>;
         };
+
+        td_2: td_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SEMICOLON>, <&mo 3>;
+        };
     };
 
     keymap {
@@ -95,8 +102,8 @@
             bindings = <
 &kp Q           &kp L         &kp U         &kp COMMA  &kp DOT                                                      &kp F        &kp W  &lt 5 R  &kp Y  &kp P
 &kp E           &kp I         &kp A         &kp O      &kp SQT      &kp PSCRN                        &kp MINUS      &kp K        &kp T  &kp N    &kp S  &kp H
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C      &kp V        &kp SLASH                        &kp SEMICOLON  &kp G        &kp D  &kp M    &kp J  &kp B
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &td_kana   &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &td_1          &lt 1 ENTER                         &kp DEL
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C      &kp V        &kp SLASH                        &td_2          &kp G        &kp D  &kp M    &kp J  &kp B
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &td_kana   &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &kp BACKSPACE  &lt 1 ENTER                         &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
