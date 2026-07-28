@@ -76,7 +76,7 @@
         td_enter: td_enter {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <120>;
             bindings = <&lt 1 ENTER>, <&mo 3>;
         };
     };
