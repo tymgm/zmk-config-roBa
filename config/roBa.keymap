@@ -72,6 +72,13 @@
             tapping-term-ms = <200>;
             bindings = <&lt_to_layer_0 6 LANGUAGE_1>, <&kp SPACE>;
         };
+
+        td_enter: td_enter {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt 1 ENTER>, <&mo 3>;
+        };
     };
 
     keymap {
@@ -79,10 +86,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp L         &kp U         &kp COMMA  &kp DOT                                                      &kp F        &kp W  &lt 5 R  &kp Y  &kp P
-&kp E           &kp I         &kp A         &kp O      &kp SQT      &kp PSCRN                        &kp MINUS      &kp K        &kp T  &kp N    &kp S  &kp H
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C      &kp V        &kp SLASH                        &kp SEMICOLON  &kp G        &kp D  &kp M    &kp J  &kp B
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &td_kana   &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &kp BACKSPACE  &lt 1 ENTER                         &kp DEL
+&kp Q           &kp L         &kp U         &kp COMMA  &kp DOT                                                      &kp F      &kp W  &lt 5 R  &kp Y  &kp P
+&kp E           &kp I         &kp A         &kp O      &kp SQT      &kp PSCRN                        &kp MINUS      &kp K      &kp T  &kp N    &kp S  &kp H
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C      &kp V        &kp SLASH                        &kp SEMICOLON  &kp G      &kp D  &kp M    &kp J  &kp B
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &td_kana   &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_2      &kp BACKSPACE  &td_enter                         &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
