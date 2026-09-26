@@ -155,7 +155,7 @@
         MOUSE {
             bindings = <
 &trans  &trans      &trans      &trans      &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &pmw_cfg 2  &pmw_cfg 0  &pmw_cfg 1  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &lt 4 A
+&trans  &pmw_cfg 2  &pmw_cfg 0  &pmw_cfg 1  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 4
 &trans  &trans      &trans      &trans      &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans      &trans      &trans      &trans  &trans      &trans  &trans                                &trans
             >;
