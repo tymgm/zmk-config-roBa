@@ -155,7 +155,7 @@
         MOUSE {
             bindings = <
 &trans  &trans      &trans      &trans      &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &pmw_cfg 2  &pmw_cfg 0  &pmw_cfg 1  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 7
+&mo 7   &pmw_cfg 2  &pmw_cfg 0  &pmw_cfg 1  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 7
 &trans  &trans      &trans      &trans      &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans      &trans      &trans      &trans  &trans      &trans  &trans                                &trans
             >;
@@ -182,7 +182,7 @@
         MOUSE_HOLD {
             bindings = <
 &trans  &trans      &trans      &trans      &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &pmw_cfg 2  &pmw_cfg 0  &pmw_cfg 1  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 7
+&mo 7   &pmw_cfg 2  &pmw_cfg 0  &pmw_cfg 1  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 7
 &trans  &trans      &trans      &trans      &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans      &trans      &trans      &trans  &trans      &trans  &trans                                &trans
             >;
